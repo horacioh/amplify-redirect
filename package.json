@@ -1,0 +1,7 @@
+{
+  "name": "amplify-redirect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Horacio Herrera",
+  "license": "MIT"
+}

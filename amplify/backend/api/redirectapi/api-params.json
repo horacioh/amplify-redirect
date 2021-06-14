@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/go",
+      "lambdaFunction": "redirectapilambda",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/go"
+    }
+  ],
+  "resourceName": "redirectapi",
+  "apiName": "redirectapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "redirectapilambda"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-amplifyredirect-prod-14626-authRole",
+    "unAuthRoleName": "amplify-amplifyredirect-prod-14626-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "redirectapilambda",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
